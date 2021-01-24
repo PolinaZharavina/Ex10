@@ -6,7 +6,7 @@ bool isOperator(char a) {
   return (a == "+" || a == "-" || a == "*" || a == "/");
 }
 int getPriority(char str) {
-      if (str == '-' || str == '+')
+    if (str == '-' || str == '+')
         return 1;
     else if (str == '*' || str == '/')
         return 2;
@@ -15,7 +15,7 @@ int getPriority(char str) {
     return 0;
 }
 std::string infix2postfix(std::string inf) {
-	inf = '(' + inf + ')';
+    inf = '(' + inf + ')';
     MyStack<char> stack(inf.size());
     std::string str_out;
     for (int i = 0; i < inf.size(); i++) {
