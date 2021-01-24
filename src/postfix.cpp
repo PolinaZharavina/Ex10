@@ -3,7 +3,7 @@
 #include "postfix.h"
 
 bool isOperator(char a) {
-  return (a == "+" || a == "-" || a == "*" || a == "/");
+  return (!isalpha(c) && !isdigit(c));
 }
 int getPriority(char str) {
     if (str == '-' || str == '+')
