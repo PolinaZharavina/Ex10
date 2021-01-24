@@ -16,7 +16,7 @@ int getPriority(char str) {
 }
 std::string infix2postfix(std::string inf) {
     inf = '(' + inf + ')';
-    MyStack<char> stack(inf.size());
+    MyStack<char> char_stack(inf.size());
     std::string str_out;
     for (int i = 0; i < inf.size(); i++) {
         if (inf[i] != ' ') {
